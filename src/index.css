@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,121 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: lavender;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+section .section-center {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+section .section-center .form {
+  width: fit-content;
+  height: fit-content;
+  padding: 30px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
+section .section-center .form form h1 {
+  text-align: center;
+}
+
+section .section-center .form input {
+  width: 300px;
+  padding-left: 20px;
+  height: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+section .section-center .form input:focus {
+  background-color: lavender;
+}
+
+
+
+section .section-center .form .form-btn {
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.list-item {
+  /* border: 1px solid blue; */
+  width: 360px;
+}
+
+.list-item .grocery-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: lavender; */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 5px;
+  /* border: 1px solid red; */
+  /* width: 100%; */
+}
+
+.list-item .grocery-item .grocery-title {
+  font-size: 14px;
+  color: slategray;
+  text-transform: capitalize;
+}
+
+.list-item .grocery-item .btn-grp button {
+  margin-right: 10px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.list-item .grocery-item .btn-grp .edit-btn .icon {
+  color: lightseagreen;
+  font-size: 14px;
+}
+
+.list-item .grocery-item .btn-grp .delete-btn .icon {
+  color: crimson;
+  font-size: 14px;
+}
+
+.alert.alert-success, .alert.alert-danger {
+  background-color: rgba(60, 179, 113, 0.5);
+  border-radius: 2px;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  padding: 5px;
+}
+
+.alert.alert-danger {
+  background-color: rgba(220, 20, 60, 0.5);
+}
+
+.grocery-container {
+  display: grid;
+  place-items: center;
+}
+
+.clear-btn {
+  border: none;
+  background-color: white;
+  color: crimson;
+  margin-top: 30px;
+  cursor: pointer;
 }
